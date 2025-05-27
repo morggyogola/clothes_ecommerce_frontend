@@ -19,7 +19,9 @@ const Navbar = () => {
             setMenu("Shop");
           }}
         >
-          <Link style={{textDecoration:'none'}}to="/">Shop</Link>
+          <Link style={{ textDecoration: "none", color: "inherit" }} to="/">
+            Shop
+          </Link>
           {menu === "Shop" ? <hr /> : <></>}
         </li>
         <li
@@ -27,7 +29,9 @@ const Navbar = () => {
             setMenu("Men");
           }}
         >
-          <Link style={{textDecoration:'none'}} to="/mens">Men</Link>
+          <Link style={{ textDecoration: "none", color: "inherit" }} to="/mens">
+            Men
+          </Link>
           {menu === "Men" ? <hr /> : <></>}
         </li>
         <li
@@ -35,7 +39,10 @@ const Navbar = () => {
             setMenu("Women");
           }}
         >
-          <Link style={{textDecoration:'none'}} to="/womens">Women</Link>
+          <Link
+            style={{ textDecoration: "none", color: "inherit" }} to="/womens">
+            Women
+          </Link>
           {menu === "Women" ? <hr /> : <></>}
         </li>
         <li
@@ -43,13 +50,19 @@ const Navbar = () => {
             setMenu("Kids");
           }}
         >
-          <Link style={{textDecoration:'none'}} to="kids">Kids</Link>
+          <Link style={{ textDecoration: "none", color: "inherit" }} to="/kids">
+            Kids
+          </Link>
           {menu === "Kids" ? <hr /> : <></>}
         </li>
       </ul>
       <div className="nav-login-cart">
-       <Link to="/login"><button>Login</button></Link> 
-       <Link to="/cart"><img src={cart_icon} alt="cart icon here" /></Link> 
+        <Link to="/login">
+          <button>Login</button>
+        </Link>
+        <Link to="/cart">
+          <img src={cart_icon} alt="cart icon here" />
+        </Link>
         <div className="nav-cart-count">0</div>
       </div>
     </div>
