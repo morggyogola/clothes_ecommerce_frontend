@@ -1,5 +1,5 @@
 import React, { createContext } from "react";
-import all_products from "./Assets/all_products";
+import all_products from "../Components/Assets/all_product";
 
 export const ShopContext = createContext(null);
 
@@ -12,4 +12,4 @@ const ShopContextProvider = (props) => {
     </ShopContext.Provider>
   );
 };
- export default ShopContextProvider;
+export default ShopContextProvider;
